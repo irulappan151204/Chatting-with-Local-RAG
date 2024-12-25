@@ -72,20 +72,13 @@ pip install langchain chromadb ollama tkinter
 ### **Running the Application**  
 
 1. Clone the repository:  
-   ```bash
-   git clone https://github.com/YourUsername/RAG-PDF-Query-System.git
-   cd RAG-PDF-Query-System
-   ```
 
 2. Run the application:  
-   ```bash
-   python rag_gui.py
-   ```
 
 3. Interact with the tool:  
    - Upload a PDF file.  
    - Enter your query in the input field.  
-   - View the AI-generated response in the output window.  
+   - View the AI-generated response in the output.  
 
 ---
 
