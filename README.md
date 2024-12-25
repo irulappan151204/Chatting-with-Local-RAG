@@ -5,22 +5,24 @@ The **RAG PDF Query System** is an interactive tool that leverages Retrieval-Aug
 
 ---
 
+Here's a well-organized and polished version of your feature description for GitHub:
+
+---
+
 ## **Features**  
 
-- **PDF Upload and Processing**:  
-  Easily upload and process PDF documents to extract and analyze their content.  
+### **PDF Upload and Processing**  
+- Extract text from PDF documents efficiently.  
 
-- **Text Splitting and Chunking**:  
-  Breaks large text documents into manageable chunks for better embedding and retrieval performance.  
+### **Text Splitting and Chunking**  
+- Break large text documents into manageable chunks to optimize embedding generation and retrieval performance.  
 
-- **Embedding Generation**:  
-  Uses advanced embedding models (e.g., `OllamaEmbeddings`) to encode document content into a vectorized format for efficient retrieval.  
+### **Embedding Generation**  
+- Leverage advanced embedding models (e.g., `OllamaEmbeddings`) to encode document content into a vectorized format for efficient storage and retrieval.  
 
-- **Conversational Query System**:  
-  Allows multi-turn interactions using a conversational retrieval chain powered by state-of-the-art language models.  
-
-- **Interactive GUI**:  
-  A user-friendly interface built with `Tkinter` for seamless file upload, query input, and response visualization.  
+### **Conversational Query System**  
+- Enable multi-turn conversations with users using a **ConversationalRetrievalChain**.  
+- Provide intelligent, context-aware responses powered by state-of-the-art language models.
 
 ---
 
@@ -36,49 +38,49 @@ The **RAG PDF Query System** is an interactive tool that leverages Retrieval-Aug
 3. **[Ollama](https://ollama.com/)**  
    - Embedding and language model provider for generating document embeddings and processing queries.  
   
-
 ---
 
 ## **How It Works**  
 
 1. **PDF Upload**:  
-   Users upload a PDF file through the Path.  
+   Users can upload a PDF file through the specified path.  
 
 2. **Processing Pipeline**:  
-   - The PDF is processed using `PyPDFLoader` to extract text.  
-   - Text is split into smaller chunks using `RecursiveCharacterTextSplitter`.  
-   - Embeddings for the chunks are generated using `OllamaEmbeddings`.  
-   - The embeddings are stored in a `Chroma` vector database.  
+   - The PDF is processed using `PyPDFLoader` or `pdfplumber` to extract text.  
+   - The extracted text is split into smaller chunks using `RecursiveCharacterTextSplitter`.  
+   - Embeddings for the text chunks are generated using `OllamaEmbeddings`.  
+   - The embeddings are stored in a `Chroma` vector database for efficient retrieval.  
 
 3. **Query Execution**:  
-   - The user inputs a natural language query.  
-   - The RAG pipeline retrieves relevant chunks from the vector database.  
-   - The language model generates a contextually accurate response.  
+   - Users input a natural language query.  
+   - The Retrieval-Augmented Generation (RAG) pipeline retrieves relevant chunks from the vector database.  
+   - A language model processes the retrieved chunks to generate a contextually accurate and relevant response.  
 
 4. **Response Display**:  
-   The response is displayed in a scrollable text.  
+   The generated response is displayed in a user-friendly, scrollable text interface for easy reading.  
 
 ---
 
-## **Setup Instructions**  
+## **Getting Started**  
 
-### **Dependencies**  
-Ensure you have Python 3.9+ and install the following libraries:  
+### **Prerequisites**  
+1. Install Python 3.10 or later.  
+2. Install the required libraries:  
+   ```bash
+   pip install langchain chromadb ollama pdfplumber
+   ```  
 
-```bash
-pip install langchain chromadb ollama tkinter
-```
-
-### **Running the Application**  
-
+### **Steps to Run**  
 1. Clone the repository:  
-
-2. Run the application:  
-
-3. Interact with the tool:  
-   - Upload a PDF file.  
-   - Enter your query in the input field.  
-   - View the AI-generated response in the output.  
+   ```bash
+   git clone <repository-url>
+   ```  
+2. Navigate to the project directory:  
+   ```bash
+   cd <project-directory>
+   ```  
+3. Add your PDF files to the `/data` folder.  
+4. Run the notebook or Python script to start processing and querying
 
 ---
 
