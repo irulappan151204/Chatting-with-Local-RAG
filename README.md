@@ -48,7 +48,7 @@ Here's a well-organized and polished version of your feature description for Git
 2. **Processing Pipeline**:  
    - The PDF is processed using `PyPDFLoader` or `pdfplumber` to extract text.  
    - The extracted text is split into smaller chunks using `RecursiveCharacterTextSplitter`.  
-   - Embeddings for the text chunks are generated using `OllamaEmbeddings`.  
+   - Embeddings for the text chunks are generated using `nomic-embed-text`.  
    - The embeddings are stored in a `Chroma` vector database for efficient retrieval.  
 
 3. **Query Execution**:  
