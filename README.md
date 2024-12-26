@@ -5,10 +5,6 @@ The **RAG PDF Query System** is an interactive tool that leverages Retrieval-Aug
 
 ---
 
-Here's a well-organized and polished version of your feature description for GitHub:
-
----
-
 ## **Features**  
 
 ### **PDF Upload and Processing**  
